@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <Navbar />
       <div className="pt-20 px-4 max-w-6xl mx-auto">
-        <section id="about" className="scroll-mt-25 py-20">
+        <section id="about" className="scroll-mt-20 py-20">
           <About />
         </section>
 
