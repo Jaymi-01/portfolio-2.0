@@ -1,32 +1,24 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Skill from './components/Skill'
-import Project from './components/Project'
+import React from "react";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skill from "./components/Skill";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <div className="pt-20 px-4 max-w-6xl mx-auto">
-        <section
-          id="about"
-          className="scroll-mt-20 py-8"
-        >
+        <section id="about" className="scroll-mt-20 py-8">
           <About />
         </section>
 
-        <section
-          id="skills"
-          className="scroll-mt-20 py-8"
-        >
+        <section id="skills" className="scroll-mt-20 py-8">
           <Skill />
         </section>
 
-        <section
-          id="projects"
-          className="scroll-mt-20 py-8"
-        >
+        <section id="projects" className="scroll-mt-20 py-8">
           <Project />
         </section>
 
@@ -34,11 +26,11 @@ const App = () => {
           id="contact"
           className="scroll-mt-20 py-8 h-screen flex items-center justify-center"
         >
-          <h1 className="text-3xl">Contact Section</h1>
+          <Contact />
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
