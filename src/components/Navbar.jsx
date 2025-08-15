@@ -13,10 +13,10 @@ export default function Navbar() {
   };
 
   const navItemClasses =
-    "relative cursor-pointer hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-blue-500 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
+    "relative cursor-pointer hover:text-primary after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-primary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
 
   return (
-    <nav className="fixed w-full bg-transparent shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Brand Name */}
