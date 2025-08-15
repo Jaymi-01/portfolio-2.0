@@ -70,7 +70,7 @@ const About = () => {
           <motion.img
             src={Me}
             alt="Joel Miller"
-            className="w-[200px] md:w-[350px] rounded-full shadow-lg"
+            className="w-[300px] md:w-[450px] rounded-full shadow-lg"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
