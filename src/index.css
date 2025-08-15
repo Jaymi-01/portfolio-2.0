@@ -11,3 +11,22 @@ body{
   --font-script: Merienda;
   --color-primary: #1d5c8e;
 }
+
+@keyframes borderGradient {
+  0% {
+    border-image-source: linear-gradient(270deg, #3b82f6, #8b5cf6);
+  }
+  50% {
+    border-image-source: linear-gradient(270deg, #8b5cf6, #3b82f6);
+  }
+  100% {
+    border-image-source: linear-gradient(270deg, #3b82f6, #8b5cf6);
+  }
+}
+
+.animated-border {
+  border: 3px solid transparent;
+  border-radius: 1.5rem; /* matches Tailwind rounded-xl */
+  border-image-slice: 1;
+  animation: borderGradient 4s ease infinite;
+}
