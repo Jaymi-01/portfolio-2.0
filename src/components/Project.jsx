@@ -23,7 +23,7 @@ const itemVariants = {
 
 const Project = () => {
   return (
-    <div className="mt-14">
+    <div>
       <motion.h1
         className="text-3xl md:text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }} // start hidden & left
@@ -37,7 +37,7 @@ const Project = () => {
         className="mt-4 text-gray-400 text-lg md:text-xl"
         initial={{ opacity: 0, y: 20 }} // start hidden & below
         whileInView={{ opacity: 1, y: 0 }} // slide in to normal position
-        viewport={{ once: true }} // run only once when in view
+        viewport={{ once: false, amount: 0.3 }} // run only once when in view
         transition={{ duration: 1, ease: "easeOut" }} // smooth slide
       >
         Showcasing all my past projects.
