@@ -1,5 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { proficiency } from "../constant/Index";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
 
 const Skill = () => {
   return (
@@ -13,15 +33,34 @@ const Skill = () => {
       >
         Skills
       </motion.h1>
-        <motion.p
-            className="mt-4 text-gray-400 text-lg md:text-xl"
-            initial={{ opacity: 0, y: 20 }} // start hidden & below
-            whileInView={{ opacity: 1, y: 0 }} // slide in to normal position
-            viewport={{ once: true }} // run only once when in view
-            transition={{ duration: 1, ease: "easeOut" }} // smooth slide
-          >
-            A comprehensive list of technologies and frameworks I have expertise in.
-          </motion.p>
+      <motion.p
+        className="mt-4 text-gray-400 text-lg md:text-xl"
+        initial={{ opacity: 0, y: 20 }} // start hidden & below
+        whileInView={{ opacity: 1, y: 0 }} // slide in to normal position
+        viewport={{ once: true }} // run only once when in view
+        transition={{ duration: 1, ease: "easeOut" }} // smooth slide
+      >
+        A comprehensive list of technologies and frameworks I have expertise in.
+      </motion.p>
+      <motion.div
+  className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+  {proficiency.map((option, index) => (
+    <motion.div
+      key={index}
+      variants={itemVariants}
+      exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+    >
+      <div className="px-6 py-4 border border-primary bg-secondary/10 rounded-xl">
+        <p className="text-xl">{option.text}</p>
+      </div>
+    </motion.div>
+  ))}
+</motion.div>
     </div>
   );
 };
