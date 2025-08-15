@@ -1,6 +1,7 @@
 import React from 'react'
 import  Navbar from './components/Navbar'
 import About from './components/About'
+import Skill from './components/Skill'
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <div className="pt-15 px-4 max-w-6xl mx-auto">
         <About />
+        <Skill />
       </div>
     </div>
   )
