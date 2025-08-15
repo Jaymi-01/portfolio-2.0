@@ -14,12 +14,12 @@ const About = () => {
     document.body.removeChild(link);
   };
   return (
-    <div className="mt-4 relative">
+    <div className="relative">
       <div className="grid md:grid-cols-2 gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1 }}
         >
           <TypeAnimation
