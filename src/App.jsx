@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,11 +25,12 @@ const App = () => {
 
         <section
           id="contact"
-          className="scroll-mt-20 py-8 h-screen flex items-center justify-center"
+          className="scroll-mt-15 py-8 flex items-center justify-center"
         >
           <Contact />
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
