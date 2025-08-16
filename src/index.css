@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 body{
-  background-color: #0D1F22;
+  background-color: #141414;
   color: #ffffff;
 }
 
@@ -26,7 +26,7 @@ body{
 
 .animated-border {
   border: 3px solid transparent;
-  border-radius: 1.5rem; /* matches Tailwind rounded-xl */
+  border-radius: 1.5rem; 
   border-image-slice: 1;
   animation: borderGradient 4s ease infinite;
 }
