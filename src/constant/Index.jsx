@@ -14,13 +14,13 @@ export const proficiency = [
     text: "Bootstrap",
   },
   {
-    text: "Tailwind",
+    text: "TailwindCSS",
   },
   {
-    text: "React.JS",
+    text: "React.Js",
   },
   {
-    text: "Next.JS",
+    text: "Next.Js",
   },
   {
     text: "React Native",
@@ -31,6 +31,9 @@ export const proficiency = [
   {
     text: "Firebase",
   },
+  {
+    text: "Vue",
+  }
 ];
 
 export const projects = [
@@ -67,6 +70,12 @@ export const projects = [
     tools: "React + TailwindCSS + JavaScript",
     text: "A webpage built with TVShow API that contains several movie recommendation.",
     link: "https://joel-movie-app.vercel.app/",
+    icon: <FaArrowRight />,
+  },{
+    title: "Afuni Ticket App",
+    tools: "React + TailwindCSS + JavaScript",
+    text: "A ticketing website built using CRUD operation, with data displayed in real time.",
+    link: "https://ticket-app-react.vercel.app/",
     icon: <FaArrowRight />,
   },
 ];
